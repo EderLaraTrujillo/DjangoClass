@@ -13,3 +13,43 @@ De ahi pa delante:
 2: git commit -m "Actualización de .... "
 3: git push
 3: git push -u origin master
+
+
+Link de descarga del curso de git:
+https://drive.google.com/open?id=1kAXX035dLMT3vEdODJF6q8sn_nTGBY-Q
+
+URLS para estudiantes:
+
+Visual paradigm
+https://www.visual-paradigm.com
+Vladimir Cortés A
+Innolution
+https://innolution.com/resources/visual-agilexicon
+Vladimir Cortés A
+Quickscrum
+https://www.quickscrum.com/ScrumGuide/
+Vladimir Cortés A
+Storiesonboard
+https://storiesonboard.com/
+Vladimir Cortés A
+Cardboardit
+https://cardboardit.com
+Vladimir Cortés A
+Scrumdo
+https://www.scrumdo.com/
+Vladimir Cortés A
+RUP
+
+http://cgrw01.cgr.go.cr/rup/RUP.es/LargeProjects/index.htm#core.base_rup/guidances/supportingmaterials/welcome_2BC5187F.html
+
+
+Rafael D. Uribe C
+RUP
+http://www.michael-richardson.com/processes/rup_classic/#core.base_rup/guidances/supportingmaterials/introduction_to_rup_36B63436.html
+Rafael D. Uribe C.
+Paquete para estudiantes Desarrollo de Software
+https://education.github.com/pack
+https://www.jetbrains.com/education/?fromMenu
+Julian Andres Lasso Figueroa (311 742 0875)
+
+
