@@ -1,0 +1,15 @@
+Primera Vez:
+1: Copiar direccion del repositorio: https://github.com/<usuario>/DjangoClass.git
+2: Configurar credenciales git: git config --global user.name "Nombre Propio"
+			   	git config --global user.email "correo@correo.com"
+3: git add . (punto)
+4: git commit -m "Subiendo Repositorio"
+5: git remote add origin https://github.com/<usuario>/DjangoClass.git
+6: git push -u origin master --force
+
+De ahi pa delante:
+
+1: git add *
+2: git commit -m "Actualización de .... "
+3: git push
+3: git push -u origin master
