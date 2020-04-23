@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Repo Developer</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<!-- Menú y cabecera -->
+	<div class="jumbotron jumbotron-fluid text-light jumbofondo">
+		<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+			<a class="navbar-brand h3" href="#">RepoDevs</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#producto"><span class="material-icons align-middle">card_travel</span> Producto</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons align-middle">launch</span>
+							Presentación
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://drive.google.com/file/d/1cOYilqnsV_7ziUg0oZ7CYgKr2Et2T1Xx/view?usp=sharing" target="_blank">Esquema de Base de Datos </a>
+							<a class="dropdown-item" href="#">Equipo Desarrollador </a>
+							<a class="dropdown-item" href="https://drive.google.com/file/d/13D_IRMTrcD5aDjhxWxwgOZTCWAd_A5ha/view?usp=sharing" target="_blank">Manuales</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#nosotros"><span class="material-icons align-middle">face</span> Quienes Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#"><span class="material-icons align-middle">question_answer</span> Contacto</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>	
+		</header>
+
+		<div class="container mt-5 pt-5 mb-1">
+			<div class="row">
+				<h1 class="display-4 mt-5">Repo Developers</h1>
+				<p class="lead">Esto es un proyecto de aprendizaje, se implementa el framework django de python, y es para los estudiantes de ADSI del SENA.</p>
+				<hr class="my-4">
+				<a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sección de promo -->
+	<section class="container mt-1">
+		<div class="row">
+			<!-- Descripción del producto: -->
+			<div class="card bg-dark text-white mx-auto" id="producto">
+			  <img src="assets/media/img/dsc4.jpg" class="card-img img-fluid" alt="...">
+			  <div class="card-img-overlay">
+			    <h1 class="card-title mt-4">Un Catálogo de Proyectos</h1>
+			    <h2 class="card-title">De Desarrolladores</h2>
+			    <p class="card-text mt-5">Un ejemplo de landing page de desarrollador o de equipo de desarrolladores, la intención es exibir los proyectos en los que ha trabajado el equipo y/o el desarrollador en el curso de ADSI</p>
+			    <div class="float-sm-right col-md-4">
+			    	<img class="col-md-4" src="assets/media/img/1.png" alt="">
+			    </div>
+			  </div>
+			</div>
+			<!-- Herramientas -->
+			<div class="card-deck mt-1">
+			  <div class="card">
+			  	<h2 class="text-center card-title">Creado con:</h2>
+			    <img src="assets/media/img/django.png" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">Django el Framework de los Perfeccionistas</h5>
+			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			  <div class="card">
+			  	<h2 class="text-center card-title">Maquetado con:</h2>
+			    <img src="assets/media/img/bootstrap.png" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">Boostrap 4 el Framework UI más Utilizado</h5>
+			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			  <div class="card">
+			  	<h2 class="text-center card-title">Persistiendo en:</h2>
+			    <img src="assets/media/img/mongoDB.png" class="card-img-top px-2 mt-2" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">MongoDB la Base de Datos no relacional de los expertos</h5>
+			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección Quienes Somos -->
+	<section class="container-fluid">
+		<div class="row">
+			<h1 class="text-center col-md-12 mt-3">Conoce un poco de nosotros:</h1>
+			<div class="col-md-3" id="nosotros">
+				<div class="col-md-12">
+					<img src="assets/media/img/avatar_male-512.png" width="300rem" class="rounded mx-auto d-block" alt="Imagen de Perfil">
+				</div>
+				<hr>
+				<h2 class="text-center col-md-12 text-primary">Eder Lara Trujillo</h2>
+				<h3 class="text-center col-md-12 text-success">Desarrollador e Instructor</h3>
+				<p class="h6 text-center">SENA-REGIONAL ANTIOQUIA COMPLEJO NORTE</p>
+				<p class="h6 text-center">CENTRO DE LA MANUFACTURA AVANZADA</p>
+				<p class="text-center text-muted">
+					ederlara@misena.edu.co
+					<br>
+					2020
+				</p>
+			</div>
+			<div class="col-md-9 mt-3">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="text-danger text-center">Lenguajes de Programación</h3>
+					</div>
+					<div class="col-md-6">
+						<h3 class="text-danger text-center">Desarrollo WEB</h3>
+					</div>
+					<div class="col-md-6">
+						<h3 class="text-danger text-center">Desarrollo BigData</h3>
+					</div>
+					<div class="col-md-6">
+						<h3 class="text-danger text-center">Desarrollo I.A.</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12">
+				<section class="row bg-dark">
+					<div class="col-md-5 mt-4">
+						<h3 class="text-light">Nuestras Redes Sociales:</h3>
+					</div>
+					<div class="col-md-7 mt-4">
+						<h3 class="text-light">También nos puedes conseguir en:</h3>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Scripts: -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
+
+
