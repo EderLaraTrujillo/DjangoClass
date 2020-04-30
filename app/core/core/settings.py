@@ -75,10 +75,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME' : 'senaapps',
+        'HOST': 'mongodb+srv://appsena:2019sena@senaapps-e1gk3.mongodb.net/senaapps?retryWrites=true',
+        'USER': 'appsena',
+        'PASSWORD': '2019sena',
     }
 }
+
 
 
 # Password validation
