@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>{% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<!-- Menú -->
+	<header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar">
+		<a class="navbar-brand h3" href="{% url 'index' %}">RepoDevs</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href=""><span class="material-icons align-middle">card_travel</span> Producto</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons align-middle">launch</span>
+						Presentación
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="https://drive.google.com/file/d/1cOYilqnsV_7ziUg0oZ7CYgKr2Et2T1Xx/view?usp=sharing" target="_blank">Esquema de Base de Datos </a>
+						<a class="dropdown-item" href="#">Equipo Desarrollador </a>
+						<a class="dropdown-item" href="https://drive.google.com/file/d/13D_IRMTrcD5aDjhxWxwgOZTCWAd_A5ha/view?usp=sharing" target="_blank">Manuales</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="{% url 'nosotros' %}"><span class="material-icons align-middle">face</span> Quienes Somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="{% url 'contacto' %}"><span class="material-icons align-middle">question_answer</span> Contacto</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>	
+	</header>
+    {% block contenido %} {% endblock %}
+    
+    	<!-- Scripts: -->
+	<script src="{% static 'assets/js/jquery.js' %}"></script>
+	<script src="{% static 'assets/js/popper.min' %}.js"></script>
+	<script src="{% static 'assets/js/material.min' %}.js"></script>
+	<script src="{% static 'assets/js/bootstrap.js' %}"></script>
+	<script src="{% static 'assets/js/funciones.js' %}"></script>
+</body>
+</html>

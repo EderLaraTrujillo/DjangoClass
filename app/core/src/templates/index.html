@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+<!-- Variables de entorno de html: -->
+{% block titulo %}Repo Developer | Brochure de Programador{% endblock %}
+
+
+{% block contenido %}
+    {% load static %}
+    
+    <!-- Menú y cabecera -->
+	<div class="jumbotron jumbotron-fluid text-light jumbofondo">
+		<div class="container mt-5 pt-5 mb-1">
+			<div class="row">
+				<h1 class="display-4 mt-5">{{ tituloIni }}</h1>
+				<p class="lead">{{ parrafo }}</p>
+				<hr class="my-4">
+				<a class="btn btn-success btn-lg" href="#" role="button">Ver Productos</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sección de promo -->
+	<section class="container mt-1">
+		<div class="row">
+			<!-- Descripción del producto: -->
+			<div class="card bg-dark text-white mx-auto" id="producto">
+			  <img src="{% static 'assets/media/img/dsc4.jpg' %}" class="card-img img-fluid" alt="...">
+			  <div class="card-img-overlay">
+			    <h1 class="card-title mt-4">Un Catálogo de Proyectos</h1>
+			    <h2 class="card-title">De Desarrolladores</h2>
+			    <p class="card-text mt-5">Un ejemplo de landing page de desarrollador o de equipo de desarrolladores, la intención es exibir los proyectos en los que ha trabajado el equipo y/o el desarrollador en el curso de ADSI</p>
+			    <div class="float-sm-right col-md-4">
+			    	<img class="col-md-4" src="assets/media/img/1.png" alt="">
+			    </div>
+			  </div>
+			</div>
+			<!-- Herramientas -->
+			<div class="card-deck mt-1">
+			  <div class="card">
+			  	<h2 class="text-center card-title">Creado con:</h2>
+			    <img src="{% static 'assets/media/img/django.png' %}" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">Django el Framework de los Perfeccionistas</h5>
+			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			  <div class="card">
+			  	<h2 class="text-center card-title">Maquetado con:</h2>
+			    <img src="{% static 'assets/media/img/bootstrap.png' %}" class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">Boostrap 4 el Framework UI más Utilizado</h5>
+			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			  <div class="card">
+			  	<h2 class="text-center card-title">Persistiendo en:</h2>
+			    <img src="{% static 'assets/media/img/mongoDB.png' %}" class="card-img-top px-2 mt-2" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">MongoDB la Base de Datos no relacional de los expertos</h5>
+			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Last updated 3 mins ago</small>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	
+{% endblock %}

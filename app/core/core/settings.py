@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Mis aplicaciones:
+    'ckeditor',
+    'userdata',
+    'proyectos',
+    'src.apps.SrcConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +80,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME' : 'senaapps',
-        'HOST': 'mongodb+srv://appsena:2019sena@senaapps-e1gk3.mongodb.net/senaapps?retryWrites=true',
-        'USER': 'appsena',
-        'PASSWORD': '2019sena',
+        'NAME' : 'brochure',
+        'HOST': 'mongodb+srv://eder:adsi2020@senaapps-e1gk3.mongodb.net/brochure?retryWrites=true&w=majority',
     }
 }
 
@@ -107,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-co'
 
 TIME_ZONE = 'UTC'
 
@@ -122,3 +124,28 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Variables para los archivos media:
+MEDIA_URL = '/media/'
+
+# Ruta para llegar a los archivos media:
+MEDIA_ROOT = os.path.join(BASE_DIR, "src/static/assets/media/")
+
+# Editor de texto Enriquecido:
+CKEDITOR_CONFIGS = {
+    'default':{
+        'toolbar' : 'Custom',
+        'toolbar_Custom':[
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-' 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source']
+        ]
+    }
+}
+
+# Variables para el ingreso del correo electrónico:
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '6ba3161ff9b085'
+EMAIL_HOST_PASSWORD = '5ce7ff62a9782a'
+EMAIL_PORT = '2525'

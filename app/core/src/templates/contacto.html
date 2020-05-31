@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12" id="contacto">
+            <section class="row bg-dark">
+                <div class="col-md-5">
+                    <h3 class="text-light">Nuestras Redes Sociales:</h3>
+                    <div class="d-flex">
+                        <a class="nav-link" href="facebook.com">Facebook</a>
+                        <a class="nav-link" href="facebook.com">Twetter</a>
+                        <a class="nav-link" href="facebook.com">LinkedIn</a>
+                        <a class="nav-link" href="facebook.com">GitHub</a>
+                    </div>
+                    <div class="col-md-12 text-light"> 
+                         <form action="" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="">Tipo de Petición</label>
+                                {{ formulario.tipomsj }}
+                            </div>
+                            <div class="form-group">
+                                <label for="">Tu Nombre</label>
+                                {{ formulario.usuario }}
+                            </div>
+                            <div class="form-group">
+                                <label for="">Correo Electrónico</label>
+                                {{ formulario.correo }}
+                            </div>
+                            <div class="form-group">
+                                <label for="">Mensaje</label>
+                                {{ formulario.mensaje }}
+                            </div>
+                            <div class="form-group d-flex justify-content-between">
+                                <span class="col-md-9 mb-2">
+                                    {% if "ok" in request.GET %}
+                                        <span class="alert alert-success mb-2">Se ha enviado tu mensaje</span>
+                                    {% endif %}
+                                    {% if "fail" in request.GET %}
+                                        <span class="alert alert-danger mb-2">No se puede Enviar tu mensaje</span>
+                                    {% endif %}
+                                </span>
+                                <button type="submit" class="btn btn-lg btn-primary col-md-3 mb-2">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-light">También nos puedes ubicar  en: <span class="material-icons text-primary">person_pin_circle</span></h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7163638266275!2d-75.57092368572685!3d6.300950795439727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f25d6670d4d%3A0x8043999e5e767b96!2sSENA%20-%20Centro%20de%20Tecnolog%C3%ADa%20de%20la%20Manufactura%20Avanzada!5e0!3m2!1ses!2sco!4v1590619579646!5m2!1ses!2sco" width="720" height="520" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
+            <footer class="text-center">
+                <span class="text-dark"><b>&copy; 2020 - Eder Lara Trujillo</b><em> Products, Inc. All rights reserved.</em><b> Teléfono: 3115780589</b></span>
+            </footer>
+        </div>
+    </div>
+</section>
+{% endblock %}

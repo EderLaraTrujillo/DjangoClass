@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+{% load static %}
+<section class="container-fluid">
+    <div class="row">
+        <h1 class="text-center col-md-12 mt-3">Conoce un poco de nosotros:</h1>
+        <div class="col-md-3" id="nosotros">
+            <div class="col-md-12">
+                <img src="{% static 'assets/media/img/avatar_male-512.png' %}" width="300rem" class="rounded mx-auto d-block" alt="Imagen de Perfil">
+            </div>
+            <hr>
+            <h2 class="text-center col-md-12 text-primary">Eder Lara Trujillo</h2>
+            <h3 class="text-center col-md-12 text-success">Desarrollador e Instructor</h3>
+            <p class="h6 text-center">SENA-REGIONAL ANTIOQUIA COMPLEJO NORTE</p>
+            <p class="h6 text-center">CENTRO DE LA MANUFACTURA AVANZADA</p>
+            <p class="text-center text-muted">
+                ederlara@misena.edu.co
+                <br>
+                2020
+            </p>
+        </div>
+        <div class="col-md-9 mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-danger text-center">Lenguajes de Programación</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-danger text-center">Desarrollo WEB</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-danger text-center">Desarrollo BigData</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-danger text-center">Desarrollo I.A.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
